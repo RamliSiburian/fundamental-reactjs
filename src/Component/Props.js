@@ -1,12 +1,21 @@
 import React from 'react'
 
-function List(props) {
+// props using Dummy Data
+export function DummyList(props) {
     return (
-        <div>
-            <h1>{props.title}</h1>
-            <h4>{props.data}</h4>
-        </div>
-    )
+        <>
+            {props.name}
+            {props.title}
+        </>
+    );
 }
 
-export default List;
+// Props using Manual Data
+export default function List(props) {
+    return (
+        <>
+            {props.name}
+            {props.title}
+        </>
+    );
+}
